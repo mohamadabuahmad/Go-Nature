@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DepManager">
+   <children>
+      <Button fx:id="BackBtn" layoutX="56.0" layoutY="49.0" mnemonicParsing="false" onAction="#BackBtn" text="Back" />
+      <Button layoutX="263.0" layoutY="138.0" mnemonicParsing="false" onAction="#ReportsBtn" text="Reports" />
+      <Button layoutX="243.0" layoutY="187.0" mnemonicParsing="false" onAction="#CheckAvailability" text="Check Availability" />
+      <Button layoutX="232.0" layoutY="245.0" mnemonicParsing="false" onAction="#ParametersRequest" text="Parameters Requests" />
+      <Label layoutX="241.0" layoutY="88.0" text="Department Manager" />
+      <Label layoutX="272.0" layoutY="54.0" text="Go Nature" />
+   </children>
+</AnchorPane>

@@ -7,9 +7,7 @@ import logic.Faculty;
 import logic.Student;
 
 import java.util.Vector;
-import gui.AcademicFrameController;
-import gui.ServerPortFrameController;
-import gui.StudentFormController;
+
 import Server.EchoServer;
 
 public class ServerUI extends Application {
@@ -24,9 +22,9 @@ public class ServerUI extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		// TODO Auto-generated method stub				  		
-		ServerPortFrameController aFrame = new ServerPortFrameController(); // create StudentFrame
+		//ServerPortFrameController aFrame = new ServerPortFrameController(); // create StudentFrame
 		 
-		aFrame.start(primaryStage);
+	//	aFrame.start(primaryStage);
 	}
 	
 	public static void runServer(String p)
