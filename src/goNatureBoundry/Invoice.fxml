@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="295.0" prefWidth="622.0" style="-fx-background-color: rgb(244,231,211)rgb(244,231,211);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goNatureBoundry.Invoice">
+   <children>
+      <Label alignment="CENTER" layoutY="10.0" prefHeight="35.0" prefWidth="150.0" text="Invoice" textFill="#33653d">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="373.0" layoutY="17.0" prefHeight="21.0" prefWidth="54.0" text="Date : ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="172.0" layoutY="73.0" prefHeight="30.0" prefWidth="132.0" text="id : ">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="date_label" layoutX="441.0" layoutY="17.0" prefHeight="21.0" prefWidth="150.0" text="Label" />
+      <Label fx:id="id_number_label" layoutX="265.0" layoutY="73.0" prefHeight="30.0" prefWidth="236.0" text="Label">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="data_about_order" alignment="TOP_CENTER" layoutX="47.0" layoutY="111.0" prefWidth="493.0" text="price before discount is :  432423">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="124.0" fitWidth="119.0" layoutX="481.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/money.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

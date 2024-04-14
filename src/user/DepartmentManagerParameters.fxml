@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="620.0" maxWidth="910.0" minHeight="620.0" minWidth="910.0" prefHeight="620.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.DepartmentManagerParameters">
+   <children>
+      <Button fx:id="Req_confirm_btn" layoutX="278.0" layoutY="515.0" mnemonicParsing="false" onAction="#Confirm_Request" style="-fx-background-color: #1f7e5f;" text="Confirm Request" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="rej_req_btn" layoutX="464.0" layoutY="515.0" mnemonicParsing="false" onAction="#reject_request" style="-fx-background-color: #1f7e5f;" text="Reject Request" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="Para_req_tble" layoutX="67.0" layoutY="132.0" onMousePressed="#request_that_selcted" prefHeight="291.0" prefWidth="781.0">
+        <columns>
+          <TableColumn fx:id="Park_col" prefWidth="151.0" text="Park" />
+          <TableColumn fx:id="type_col" prefWidth="172.0" text="Parameter Type" />
+            <TableColumn fx:id="Send_date_col" prefWidth="152.0" text="Send Date" />
+            <TableColumn fx:id="OldValue_col" prefWidth="156.0" text="Old Value" />
+            <TableColumn fx:id="new_value_col" prefWidth="149.0" text="New Value" />
+        </columns>
+      </TableView>
+            <Label fx:id="MainLabel" prefHeight="100.0" prefWidth="910.0" style="-fx-background-color: #1f7e5f;" text="              Parameters Request" textFill="WHITE">
+         <font>
+            <Font name="Guttman Drogolin Bold" size="28.0" />
+         </font>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <effect>
+            <InnerShadow choke="0.25" color="#f5e7d3" radius="9.26" width="18.04" />
+         </effect>
+      </Label>
+      <ImageView fitHeight="122.0" fitWidth="216.0" layoutX="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/92d015b0-5772-4ae1-a6f3-9d3210c1ccbe.jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="back_btn" layoutX="807.0" layoutY="554.0" mnemonicParsing="false" onAction="#back_btn" style="-fx-background-color: #1f7e5f;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="86.0" fitWidth="128.0" layoutX="385.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Pictures/חצים.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

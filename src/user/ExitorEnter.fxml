@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="541.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.ExitorEnter">
+   <children>
+      <Label fx:id="title" layoutX="-10.0" layoutY="-9.0" prefHeight="95.0" prefWidth="763.0" style="-fx-background-color: #1f7e5f;" text="             Check Order Details" textFill="WHITE">
+         <font>
+            <Font name="Guttman Drogolin Bold" size="28.0" />
+         </font>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <effect>
+            <InnerShadow choke="0.25" color="#f5e7d3" radius="9.26" width="18.04" />
+         </effect>
+      </Label>
+      <Label layoutX="228.0" layoutY="132.0" text="Enter ID :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="id_txtfield" layoutX="309.0" layoutY="131.0" />
+      <Button fx:id="check_id_btn" layoutX="511.0" layoutY="131.0" mnemonicParsing="false" onAction="#handle_check_id" style="-fx-background-color: rgb(244,231,211);" text="Check ID" />
+      <Label layoutX="22.0" layoutY="223.0" text="Auto Fill !">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="268.0" text="ID Number :" />
+      <Label layoutX="67.0" layoutY="293.0" text="Date :" />
+      <Label layoutX="67.0" layoutY="318.0" text="Time :" />
+      <Label layoutX="67.0" layoutY="344.0" text="Price :" />
+      <Label layoutX="66.0" layoutY="371.0" text="Number Of Visitors :" />
+      <Label layoutX="68.0" layoutY="398.0" text="Order Type :" />
+      <Label layoutX="70.0" layoutY="421.0" text="Pay Status :" />
+      <Label layoutX="69.0" layoutY="446.0" text="Phone Number :" />
+<Label fx:id="id_label" layoutX="195.0" layoutY="266.0" style="-fx-background-color: rgb(244,231,211);" />
+<Label fx:id="date_label" layoutX="195.0" layoutY="291.0" style="-fx-background-color: rgb(244,231,211);" />
+<Label fx:id="time_order_label" layoutX="195.0" layoutY="316.0" style="-fx-background-color: rgb(244,231,211);" />
+<Label fx:id="price_label" layoutX="195.0" layoutY="341.0" style="-fx-background-color: rgb(244,231,211);" />
+<Label fx:id="num_visitors_label" layoutX="195.0" layoutY="366.0" style="-fx-background-color: rgb(244,231,211);" />
+<Label fx:id="type" layoutX="195.0" layoutY="391.0" style="-fx-background-color: rgb(244,231,211);" />
+<Label fx:id="status_pay_label" layoutX="195.0" layoutY="416.0" style="-fx-background-color: rgb(244,231,211);" />
+<Label fx:id="phone_label" layoutX="195.0" layoutY="441.0" style="-fx-background-color: rgb(244,231,211);" />
+
+      <Button fx:id="enter_btn" layoutX="511.0" layoutY="356.0" mnemonicParsing="false" onAction="#handle_confirm_enter" style="-fx-background-color: rgb(244,231,211);" text="Confirm Entrance" />
+      <Button fx:id="back_btn" layoutX="647.0" layoutY="474.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: rgb(244,231,211);" text="Back" />
+      <Label fx:id="id_format" layoutX="332.0" layoutY="173.0" prefHeight="21.0" prefWidth="187.0" text="-" />
+      <ImageView fitHeight="112.0" fitWidth="142.0" layoutX="-4.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/92d015b0-5772-4ae1-a6f3-9d3210c1ccbe.jpeg" />
+         </image>
+      </ImageView>
+      <Line endX="170.0" endY="-32.0" layoutX="185.0" layoutY="255.0" startX="170.0" startY="244.0" />
+      <ImageView fitHeight="112.0" fitWidth="108.0" layoutX="377.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Pictures/arrow.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

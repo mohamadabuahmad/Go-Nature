@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="620.0" maxWidth="910.0" minHeight="620.0" minWidth="910.0" prefHeight="620.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.UnplannedVisit">
+   <children>
+      <HBox layoutX="157.0" layoutY="123.0" prefHeight="187.0" prefWidth="596.0">
+         <children>
+            <VBox prefHeight="174.0" prefWidth="446.0">
+               <children>
+                  <Label prefHeight="31.0" text="Visit Type : ">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" text="Number of visitors :">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="idNumberLabel" prefHeight="31.0" text="ID :">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="352.0" prefWidth="371.0">
+               <children>
+                  <ComboBox fx:id="visitTypeComboBox" onAction="#visitTypeChanged" prefHeight="31.0" prefWidth="282.0">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <ComboBox fx:id="numOfVisitorsComboBox" prefHeight="31.0" prefWidth="268.0" promptText="select visit type">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <TextField fx:id="IDNumberTextField">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Label layoutX="458.0" layoutY="342.0" prefHeight="48.0" prefWidth="65.0" text="Price : ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="priceLabel" alignment="CENTER" layoutX="546.0" layoutY="351.0" prefHeight="31.0" prefWidth="130.0" style="-fx-background-color: rgb(244,231,211);">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="calculatePriceBtn" layoutX="246.0" layoutY="342.0" mnemonicParsing="false" onAction="#calculatePrice" prefHeight="48.0" prefWidth="169.0" style="-fx-background-color: rgb(244,231,211);" text="Calculate Price">
+         <effect>
+            <DropShadow color="#3d77ff" height="30.0" radius="14.5" width="30.0" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="addOrderBtn" layoutX="246.0" layoutY="421.0" mnemonicParsing="false" onAction="#addOrder" prefHeight="54.0" prefWidth="169.0" style="-fx-background-color: rgb(244,231,211);" text="Add Order">
+         <effect>
+            <DropShadow color="#3d77ff" height="30.0" radius="14.5" width="30.0" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorMsgLabel" layoutX="490.0" layoutY="295.0" prefHeight="30.0" prefWidth="395.0" textFill="RED">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="showInvoiceBtn" layoutX="246.0" layoutY="502.0" mnemonicParsing="false" onAction="#open_invoice" prefHeight="63.0" prefWidth="169.0" style="-fx-background-color: rgb(244,231,211);" text="Show Invoice">
+         <effect>
+            <DropShadow color="#3d77ff" height="30.0" radius="14.5" width="30.0" />
+         </effect>
+         
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         
+      </Button>
+      <Button fx:id="backBtn" layoutX="753.0" layoutY="565.0" mnemonicParsing="false" onAction="#backBtn" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #1f7e5f; -fx-text-fill: white;" text="Back">
+    <font>
+        <Font size="16.0" />
+    </font>
+    <effect>
+        <DropShadow color="#195772" radius="5.0" />
+    </effect>
+</Button>
+      <Label prefHeight="85.0" prefWidth="920.0" style="-fx-background-color: #1f7e5f;" text="  Make unplanned order" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="620.0" maxWidth="910.0" minHeight="620.0" minWidth="910.0" prefHeight="620.0" prefWidth="910.0" style="-fx-background-color: rgb(244,231,211);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.ParkMangerReports">
+    <children>
+        <Label fx:id="MainLabel" prefHeight="100.0" prefWidth="910.0" style="-fx-background-color: #1f7e5f;" text="                       Generate Report" textFill="WHITE">
+            <font>
+                <Font name="Guttman Drogolin Bold" size="28.0" />
+            </font>
+            <padding>
+                <Insets left="20.0" />
+            </padding>
+            <effect>
+                <InnerShadow choke="0.25" color="#f5e7d3" radius="9.26" width="18.04" />
+            </effect>
+        </Label>
+        
+        <HBox layoutX="290.0" layoutY="140.0" prefHeight="100.0" prefWidth="330.0">
+            <children>
+                <VBox prefHeight="100.0" prefWidth="150.0">
+                    <children>
+                        <Label style="-fx-font-size: 18;" text="Report Type:" textFill="#3e9740">
+                            <VBox.margin>
+                                <Insets top="10.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label style="-fx-font-size: 18;" text="Report Month:" textFill="#4e8a53">
+                            <VBox.margin>
+                                <Insets top="10.0" />
+                            </VBox.margin>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox prefHeight="100.0" prefWidth="180.0">
+                    <children>
+                        <ComboBox fx:id="ReportTypeCombo" prefHeight="31.0" prefWidth="180.0">
+                            <VBox.margin>
+                                <Insets top="10.0" />
+                            </VBox.margin>
+                        </ComboBox>
+                        <DatePicker fx:id="ReportMonth" prefHeight="31.0" prefWidth="180.0">
+                            <VBox.margin>
+                                <Insets top="10.0" />
+                            </VBox.margin>
+                        </DatePicker>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        
+        <Button fx:id="CreateReportBtn" layoutX="378.0" layoutY="270.0" mnemonicParsing="false" onAction="#CreateReportBtn" prefHeight="40.0" prefWidth="155.0" style="-fx-background-color: #1f7e5f;" text="Create Report" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <effect>
+                <DropShadow color="#0e4d4b" />
+            </effect>
+        </Button>
+        
+        <Label fx:id="message" alignment="CENTER" layoutX="20" layoutY="320" prefHeight="27.0" prefWidth="870.0" text="Status message here" textFill="RED">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Button fx:id="BackBtn" alignment="CENTER" layoutX="45.0" layoutY="546.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="40.0" prefWidth="92.0" style="-fx-background-color: #1f7e5f;" text="back" textFill="#fcf7f7">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/92d015b0-5772-4ae1-a6f3-9d3210c1ccbe.jpeg" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

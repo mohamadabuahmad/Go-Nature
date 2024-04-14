@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="620.0" maxWidth="910.0" minHeight="620.0" minWidth="910.0" prefHeight="620.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.ParkMangerAvailability">
+    <children>
+        <Label fx:id="MainLabel" layoutX="20.0" prefHeight="120.0" prefWidth="894.0" style="-fx-background-color: #1f7e5f;" text="                                   Check Park Availability" textFill="WHITE">
+            <font>
+                <Font name="Arial Bold" size="24.0" />
+            </font>
+            <effect>
+                <InnerShadow color="#0e4d4b" radius="5.0" />
+            </effect>
+        </Label>
+        <Button fx:id="CheckVacancyBtn" layoutX="372.0" layoutY="310.0" mnemonicParsing="false" onMouseClicked="#CheckVacancy" prefHeight="40.0" prefWidth="188.0" style="-fx-background-color: #1f7e5f; -fx-text-fill: white;" text="Check Availability">
+            <font>
+                <Font size="16.0" />
+            </font>
+            <effect>
+                <DropShadow color="#195772" radius="5.0" />
+            </effect>
+        </Button>
+        <HBox layoutX="205.0" layoutY="160.0" prefHeight="120.0" prefWidth="500.0" spacing="20">
+            <children>
+                <VBox prefHeight="120.0" prefWidth="250.0" spacing="10">
+                    <children>
+                        <Label style="-fx-font-size: 16px; -fx-text-fill: #333;" text="Currently in park:">
+                            <font>
+                                <Font name="Arial" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="32.0" prefWidth="143.0" style="-fx-font-size: 16px; -fx-text-fill: #333;" text="Available places:">
+                            <font>
+                                <Font name="Arial" size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox prefHeight="120.0" prefWidth="250.0" spacing="10">
+                    <children>
+                        <Label fx:id="NumberOfCurrentVisitorLabel" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #ececec; -fx-text-fill: #333;">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="NumberOfAvailablePlaces" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #ececec; -fx-text-fill: #333;">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <Button fx:id="BackBtn" layoutX="20" layoutY="560" mnemonicParsing="false" onAction="#BackBtn" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #1f7e5f; -fx-text-fill: white;" text="Back">
+            <font>
+                <Font size="16.0" />
+            </font>
+            <effect>
+                <DropShadow color="#195772" radius="5.0" />
+            </effect>
+        </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/92d015b0-5772-4ae1-a6f3-9d3210c1ccbe.jpeg" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="620.0" maxWidth="910.0" minHeight="620.0" minWidth="910.0" prefHeight="620.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.ChangeParameters">
+    <children>
+        <Label fx:id="MainLabel" layoutX="29.0" prefHeight="100.0" prefWidth="882.0" style="-fx-background-color: #1f7e5f;" text="             Change Park Parameters" textFill="WHITE">
+            <font>
+                <Font name="Guttman Drogolin Bold" size="28.0" />
+            </font>
+            <padding>
+                <Insets left="20.0" />
+            </padding>
+            <effect>
+                <InnerShadow choke="0.25" color="#f5e7d3" radius="9.26" width="18.04" />
+            </effect>
+        </Label>
+        <Button fx:id="Change_stay_time_btn" layoutX="90.0" layoutY="322.0" mnemonicParsing="false" onMouseClicked="#Change_Stay_Time_Parameter" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: rgb(244,231,211#1f7e5f);" text="request change">
+<font>
+<Font size="14.0" />
+</font>
+<effect>
+<DropShadow color="#195772" />
+</effect>
+</Button>
+<Button fx:id="Change_max_num_visitor_btn" layoutX="373.0" layoutY="322.0" mnemonicParsing="false" onMouseClicked="#Change_Number_Of_Visitort_Parameter" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: rgb(244,231,211);" text="request change">
+<font>
+<Font size="14.0" />
+</font>
+<effect>
+<DropShadow color="#195772" />
+</effect>
+</Button>
+<Button fx:id="Change_num_unplanned_visitorsBtn" layoutX="649.0" layoutY="322.0" mnemonicParsing="false" onMouseClicked="#Change_Max_Num_OfUnplanned_Visitors" prefHeight="31.0" prefWidth="120.0" style="-fx-background-color: rgb(244,231,211);" text="request change">
+<font>
+<Font size="14.0" />
+</font>
+<effect>
+<DropShadow color="#195772" />
+</effect>
+</Button>
+<Button fx:id="BackBtn" layoutX="37.0" layoutY="542.0" mnemonicParsing="false" onAction="#BackBtn" style="-fx-background-color: #1f7e5f;" text="Back" textFill="WHITE">
+<font>
+<Font size="18.0" />
+</font>
+<effect>
+<DropShadow color="#0e4d4b" />
+</effect>
+</Button>
+<Label fx:id="msg" alignment="CENTER_RIGHT" layoutX="32.0" layoutY="420" prefHeight="27.0" prefWidth="847.0" text="Status message will appear here" textFill="RED" visible="false">
+<font>
+<Font size="15.0" />
+</font>
+</Label>
+      <ImageView fitHeight="120.0" fitWidth="164.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/92d015b0-5772-4ae1-a6f3-9d3210c1ccbe.jpeg" />
+         </image>
+      </ImageView>
+            <Label layoutX="578.0" layoutY="158.0" text="Max Number of Unplanned Visitors :">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Label>
+            <TextField fx:id="MaxNumUnplanned_OldValue" layoutX="634.0" layoutY="208.0" promptText="Old Value" />
+            <TextField fx:id="MaxNumUnplanned_NewValue" layoutX="634.0" layoutY="255.0" promptText="New Value" />
+            <TextField fx:id="MaxNumVisitors_OldValue" layoutX="358.0" layoutY="208.0" promptText="Old Value" />
+            <TextField fx:id="MaxNumOfVisitor_NewValue" layoutX="358.0" layoutY="255.0" promptText="New Value" />
+            <Label layoutX="326.0" layoutY="158.0" text="Max Number of Visitors :">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="158.0" text="Stay Time inside the park :">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Label>
+            <TextField fx:id="StayTime_OldValue" layoutX="76.0" layoutY="208.0" promptText="Old Value" />
+            <TextField fx:id="StayTime_NewValue" layoutX="76.0" layoutY="255.0" promptText="New Value (HH:mm)" />
+</children>
+</AnchorPane>

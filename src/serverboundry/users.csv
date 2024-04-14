@@ -1,0 +1,13 @@
+workerId,userName,password,firstName,lastName,email,role,parkName
+W001,marwa,123,marwa,hamood,marwa.h@gmail.com,"Department Manager","Nesher Park"
+W002,shady,123,shady,mansour,shady.m@gmail.com,"Park Manager","Nesher Park"
+W003,mohammad,123,mohammad,abuahmad,mohammad.a@gmail.com,"Park Manager","Huga Park"
+W004,eyas,123,eyas,rizik,eyas.r@gmail.com,"Park Manager","Hakishon Park"
+W005,worker1,123,worker,one,worker1@gmail.com,Worker,"Nesher Park"
+W006,worker2,123,worker,two,worker2@gmail.com,Worker,"Huga Park"
+W007,worker3,123,worker,three,worker3@gmail.com,Worker,"Hakishon Park"
+W008,worker4,123,worker,four,worker4@gmail.com,Worker,"Nesher Park"
+W009,srworker1,123,srworker,"one ",srworker1@gmail.com,"Service Representative",NULL
+W010,srworker2,123,srworker,two,srworker2@gmail.com,"Service Representative",NULL
+W011,srworker3,123,srworker,three,srworker3@gmail.com,"Service Representative",NULL
+W012,srworker4,123,srworker,four,srworker4@gmail.com,"Service Representative",NULL

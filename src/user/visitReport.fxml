@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="880.0" prefWidth="1175.0" style="-fx-background-color: #1f7e5f;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.VisitReportC">
+   <children>
+      <Label layoutX="556.0" layoutY="22.0" text="Visits Report" textFill="#fafff8">
+         <font>
+            <Font name="Georgia" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="551.0" layoutY="70.0" text=" month :  " textFill="#dee8dd">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+              <PieChart fx:id="stayTimeChart" layoutX="26.0" layoutY="440.0" prefHeight="393.0" prefWidth="524.0" />
+      
+      <Label fx:id="RDate" layoutX="640.0" layoutY="67.0" prefHeight="27.0" prefWidth="60.0" text="2/2024" textAlignment="CENTER" textFill="#ebf5eb">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="151.0" fitWidth="206.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/92d015b0-5772-4ae1-a6f3-9d3210c1ccbe.jpeg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="369.0" layoutY="107.0" prefHeight="314.0" prefWidth="415.0" style="-fx-background-color: rgb(244,231,211);">
+         <children>
+            <Label layoutX="14.0" layoutY="80.0" prefHeight="219.0" prefWidth="176.0" text="Planned Traveler &#10;&#10;Planned Guide &#10;&#10;Unplanned Traveler&#10; &#10;Unplanned Guide ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="192.0" layoutY="43.0" text="8:00-12:00">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="318.0" layoutY="43.0" text="12:00-16:00">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="438.0" layoutY="43.0" text="16:00-19:00">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Line endX="211.0" layoutX="319.0" layoutY="79.0" startX="-299.0" />
+            <Label fx:id="PlannedTraveler" layoutX="190.0" layoutY="100.0" prefHeight="27.0" prefWidth="338.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="PlannedGuide" layoutX="192.0" layoutY="148.0" prefHeight="27.0" prefWidth="338.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="UnplannedTraveler" layoutX="192.0" layoutY="201.0" prefHeight="27.0" prefWidth="338.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="UnplannedGuide" layoutX="192.0" layoutY="257.0" prefHeight="27.0" prefWidth="338.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="parkN" layoutX="102.0" prefHeight="35.0" prefWidth="327.0" text="              Green Park" textFill="#527251">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Line endX="234.0" endY="-15.0" layoutX="312.0" layoutY="173.0" startX="234.0" startY="221.0" />
+      
+      <PieChart fx:id="stayTimeChart" layoutX="48.0" layoutY="455.0" prefHeight="393.0" prefWidth="524.0" />
+      <PieChart fx:id="stayTimeChart1" layoutX="666.0" layoutY="453.0" prefHeight="397.0" prefWidth="475.0" />
+      
+   </children>
+</AnchorPane>

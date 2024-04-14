@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="1079.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.DepManagerPage">
+   <children>
+      <Label fx:id="main" layoutY="-1.0" prefHeight="100.0" prefWidth="1110.0" style="-fx-background-color: #1f7e5f;" text="                       Department Manager Home Page" textFill="WHITE">
+         <font>
+            <Font name="Guttman Drogolin Bold" size="28.0" />
+         </font>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <effect>
+            <InnerShadow choke="0.25" color="#f5e7d3" radius="9.26" width="18.04" />
+         </effect>
+      </Label>
+      <Label fx:id="role" alignment="TOP_RIGHT" layoutX="698.0" layoutY="51.0" prefHeight="43.0" prefWidth="360.0" text="Hello,Name(Role)" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="logout_btn" layoutX="924.0" layoutY="646.0" mnemonicParsing="false" onAction="#log_out" prefHeight="30.0" prefWidth="147.0" style="-fx-background-color: #1f7e5f;" text="Logout" textFill="WHITE">
+         <effect>
+            <InnerShadow choke="0.2" height="0.0" radius="2.0" width="10.0" />
+         </effect>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="370.0" layoutY="331.0" onMouseClicked="#handleParkAvailability" prefHeight="51.0" prefWidth="371.0" style="-fx-background-color: #1f7e5f; -fx-text-fill: white;" text="Check Park Availability">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button layoutX="369.0" layoutY="272.0" onMouseClicked="#handleParameters" prefHeight="51.0" prefWidth="371.0" style="-fx-background-color: #1f7e5f; -fx-text-fill: white;" text="Parameters Change Requests">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button layoutX="370.0" layoutY="211.0" onMouseClicked="#handleReports" prefHeight="51.0" prefWidth="371.0" style="-fx-background-color: #1f7e5f; -fx-text-fill: white;" text="Reports">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+     
+      <ImageView fitHeight="154.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/92d015b0-5772-4ae1-a6f3-9d3210c1ccbe.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="335.0" fitWidth="391.0" layoutX="359.0" layoutY="396.0" opacity="0.75" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/manger.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

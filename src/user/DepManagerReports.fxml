@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="620.0" maxWidth="910.0" minHeight="620.0" minWidth="910.0" prefHeight="620.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.DepManagerReports">
+   <children>
+         <Label fx:id="MainLabel" prefHeight="100.0" prefWidth="910.0" style="-fx-background-color: #1f7e5f;" text="              Reports" textFill="WHITE">
+         <font>
+            <Font name="Guttman Drogolin Bold" size="28.0" />
+         </font>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <effect>
+            <InnerShadow choke="0.25" color="#f5e7d3" radius="9.26" width="18.04" />
+         </effect>
+      </Label>
+      <HBox layoutX="320.0" layoutY="189.0" prefHeight="78.0" prefWidth="332.0">
+         <children>
+            <VBox prefHeight="78.0" prefWidth="146.0">
+               <children>
+                  <Label text="Report Type :">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Report Month :">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="78.0" prefWidth="211.0">
+               <children>
+                  <ComboBox fx:id="type_combox" prefHeight="25.0" prefWidth="175.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <DatePicker fx:id="mounthreport_datepicker">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </DatePicker>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button fx:id="reportbtn" layoutX="378.0" layoutY="291.0" mnemonicParsing="false" onAction="#handle_create_report_btn" prefHeight="39.0" prefWidth="155.0" style="-fx-background-color: #1f7e5f;" text="Create Report" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="#0e4d4b" />
+         </effect>
+      </Button>
+      <ComboBox fx:id="selectpark_combox" layoutX="454.0" layoutY="163.0" prefHeight="25.0" prefWidth="183.0" />
+      <Label layoutX="320.0" layoutY="162.0" text="Select Park : ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="error_msglabel" layoutX="150.0" layoutY="351.0" prefHeight="27.0" prefWidth="616.0" text="Please Fill in All Fields" textFill="RED" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="162.0" fitWidth="134.0" layoutX="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/92d015b0-5772-4ae1-a6f3-9d3210c1ccbe.jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="back_btn" layoutX="688.0" layoutY="499.0" mnemonicParsing="false" onAction="#back" prefHeight="39.0" prefWidth="155.0" style="-fx-background-color: #1f7e5f;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="#0e4d4b" />
+         </effect>
+      </Button>
+      <ImageView fitHeight="246.0" fitWidth="348.0" layoutX="284.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Pictures/report.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

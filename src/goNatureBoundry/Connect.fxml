@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="348.0" prefWidth="584.0" style="-fx-background-color: #1f7e5f;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goNatureBoundry.Connect">
+    <children>
+        <Label layoutX="185.0" layoutY="99.0" text="IP Address:" textFill="#f8eded" AnchorPane.leftAnchor="185.0" AnchorPane.topAnchor="99.0" />
+        <TextField fx:id="ipTextField" layoutX="185.0" layoutY="119.0" prefWidth="200" AnchorPane.leftAnchor="185.0" AnchorPane.topAnchor="119.0" text="localhost"/>
+        
+        <Label layoutX="185.0" layoutY="159.0" text="Port:" textFill="#fff9f9" AnchorPane.leftAnchor="185.0" AnchorPane.topAnchor="159.0" />
+        <TextField fx:id="portTextField" layoutX="185.0" layoutY="179.0" prefWidth="200" AnchorPane.leftAnchor="185.0" AnchorPane.topAnchor="179.0" text="5555" />
+        
+        <Button layoutX="185.0" layoutY="219.0" onAction="#handleConnectButton" prefWidth="200" style="-fx-background-color: rgb(244,231,211);" text="Connect" textFill="#221e1e" AnchorPane.leftAnchor="185.0" AnchorPane.topAnchor="219.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+      <Label prefHeight="69.0" prefWidth="587.0" style="-fx-background-color: #1f7e5f;" text="Connect Page" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

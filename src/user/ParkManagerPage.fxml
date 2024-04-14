@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1110.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.ParkManagerPage">
+   <children>
+      <Label fx:id="PageTitle" layoutX="200.0" layoutY="0.0" prefHeight="100.0" prefWidth="910.0" style="-fx-background-color: #1f7e5f;" text="Park Manager Home Page" textFill="#f2e6d3">
+         <font>
+            <Font name="Guttman Drogolin Bold" size="28.0" />
+         </font>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <effect>
+            <InnerShadow choke="0.25" color="#f5e7d3" radius="9.26" width="18.04" />
+         </effect>
+      </Label>
+      
+      <Label fx:id="NameTextView" alignment="TOP_RIGHT" layoutX="210.0" layoutY="108.0" prefHeight="27.0" prefWidth="410.0" text="Hello, Name(Role)" textFill="#353c36">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      
+      <Button fx:id="LogoutBtn" layoutX="917.0" layoutY="643.0" mnemonicParsing="false" onMouseClicked="#Logout" prefHeight="51.0" prefWidth="179.0" style="-fx-background-color: rgb(245,231,211);" text="Logout">
+         <effect>
+            <InnerShadow choke="0.2" height="0.0" radius="2.0" width="10.0" />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      
+      <!-- Corrected Image Views to Buttons for better practice, as actions seem to be more suited for Buttons in this context -->
+
+      
+           <Button fx:id="Reports" layoutX="368.0" layoutY="317.0" onMouseClicked="#OpenReportGUI" prefHeight="51.0" prefWidth="353.0" style="-fx-background-color: #1f7e5f; -fx-text-fill: white;" text="Reports">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button fx:id="btnParameters" layoutX="368.0" layoutY="241.0" onMouseClicked="#OpenChangeParkParameters" prefHeight="51.0" prefWidth="353.0" style="-fx-background-color: #1f7e5f; -fx-text-fill: white;" text="Parameters Change Requests">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button fx:id="btnVaccancy" layoutX="368.0" layoutY="170.0" onMouseClicked="#OpenCheckParkavailability" prefHeight="51.0" prefWidth="353.0" style="-fx-background-color: #1f7e5f; -fx-text-fill: white;" text="Check Park Availability">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <ImageView fitHeight="168.0" fitWidth="200.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/92d015b0-5772-4ae1-a6f3-9d3210c1ccbe.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="278.0" fitWidth="722.0" layoutX="326.0" layoutY="428.0" opacity="0.62" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/manger1.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

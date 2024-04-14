@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="620.0" maxWidth="910.0" minHeight="620.0" minWidth="910.0" prefHeight="620.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.DepManagerAvailability">
+   <children>
+           <Label fx:id="MainLabel" prefHeight="100.0" prefWidth="910.0" style="-fx-background-color: #1f7e5f;" text="                                         Availability" textFill="WHITE">
+         <font>
+            <Font name="Guttman Drogolin Bold" size="28.0" />
+         </font>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <effect>
+            <InnerShadow choke="0.25" color="#f5e7d3" radius="9.26" width="18.04" />
+         </effect>
+      </Label>
+      <ComboBox fx:id="park_comobox" layoutX="406.0" layoutY="211.0" prefHeight="25.0" prefWidth="187.0" />
+      <Label layoutX="294.0" layoutY="210.0" text="Select Park : " textFill="#1d4628">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="chack_availability_btn" layoutX="349.0" layoutY="281.0" mnemonicParsing="false" onAction="#Check_Availability" prefHeight="39.0" prefWidth="295.0" style="-fx-background-color: #1f7e5f;" text="Check Availability" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="#110000" height="30.0" radius="14.5" width="30.0" />
+         </effect>
+      </Button>
+      <HBox layoutX="230.0" layoutY="351.0" prefHeight="133.0" prefWidth="501.0">
+         <children>
+            <VBox prefHeight="133.0" prefWidth="480.0">
+               <children>
+                  <Label prefHeight="27.0" text="Number of Visitors currently in park : ">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="27.0" text="Number of available places in park : ">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="27.0" text="Number of available unplanned places in park : ">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="131.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="Num_visitor_label" alignment="CENTER" prefHeight="21.0" prefWidth="103.0" style="-fx-background-color: #1f7e5f;" text="0" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="available_Places_label" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="21.0" prefWidth="103.0" style="-fx-background-color: #1f7e5f;" text="0" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="available_unplanned_Places_lbl" alignment="CENTER" prefHeight="21.0" prefWidth="103.0" style="-fx-background-color: #1f7e5f;" text="0" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <ImageView fitHeight="133.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/92d015b0-5772-4ae1-a6f3-9d3210c1ccbe.jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="back_btn" layoutX="50.0" layoutY="536.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #1f7e5f;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="#110000" height="30.0" radius="14.5" width="30.0" />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

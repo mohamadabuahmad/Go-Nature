@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="879.0" prefWidth="1222.0" style="-fx-background-color: rgb(244,231,211);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.TotalVisitorReportC">
+   <children>
+      <Label layoutX="481.0" layoutY="196.0" text="Total visitors Report" textFill="#80bc85">
+         <font>
+            <Font name="Georgia Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="monthLabel" layoutX="617.0" layoutY="239.0" text="3/2024" textFill="#588a5c">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="530.0" layoutY="239.0" text="month : " textFill="#59a860">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="435.0" layoutY="397.0" prefHeight="208.0" prefWidth="216.0" text="Planned Traveler &#10; &#10;Planned Guide &#10;&#10;Unplanned Traveler&#10;&#10;Unplanned Guide ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="433.0" layoutY="367.0" text="Visitor Type">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="710.0" layoutY="364.0" text="number">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="plannedVisitorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="739.0" layoutY="408.0" text="0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="plannedGuideLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="739.0" layoutY="518.0" text="0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="unplannedTravelerLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="739.0" layoutY="570.0" text="0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="unplannedGuideLabel" alignment="CENTER" layoutX="739.0" layoutY="466.0" text="0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="476.0" layoutY="612.0" text="Total">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalVisitorLabel" layoutX="736.0" layoutY="609.0" text="0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="513.0" layoutY="272.0" text="Green Park" textFill="#569a58">
+         <font>
+            <Font name="Georgia Pro" size="36.0" />
+         </font>
+      </Label>
+      <Line endX="253.0" layoutX="626.0" layoutY="394.0" startX="-262.0" />
+      <ImageView fitHeight="148.0" fitWidth="183.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/92d015b0-5772-4ae1-a6f3-9d3210c1ccbe.jpeg" />
+         </image>
+      </ImageView>
+      <Line endX="253.0" layoutX="604.0" layoutY="606.0" startX="-262.0" />
+      <Line endX="253.0" layoutX="626.0" layoutY="364.0" startX="-262.0" />
+      <Label layoutX="497.0" layoutY="328.0" text="Total visitors In Month" textFill="#659760">
+         <font>
+            <Font name="Georgia Italic" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

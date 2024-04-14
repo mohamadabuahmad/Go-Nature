@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="620.0" maxWidth="910.0" minHeight="620.0" minWidth="910.0" prefHeight="620.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.WorkerAvailability">
+   <children>
+           <Label fx:id="MainLabel" prefHeight="100.0" prefWidth="910.0" style="-fx-background-color: #1f7e5f;" text="                                      Availability" textFill="WHITE">
+         <font>
+            <Font name="Guttman Drogolin Bold" size="28.0" />
+         </font>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <effect>
+            <InnerShadow choke="0.25" color="#f5e7d3" radius="9.26" width="18.04" />
+         </effect>
+      </Label>
+      <Button fx:id="checkVacancyButton" layoutX="61.0" layoutY="221.0" mnemonicParsing="false" onAction="#onCheckVacancyClicked" style="-fx-background-color: #1f7e5f;" text="Check Availability" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="#110000" height="30.0" radius="14.5" width="30.0" />
+         </effect>
+      </Button>
+      <HBox layoutX="61.0" layoutY="278.0" prefHeight="133.0" prefWidth="501.0">
+         <children>
+            <VBox prefHeight="133.0" prefWidth="480.0">
+               <children>
+                  <Label prefHeight="27.0" text="Number of Visitors currently in park : ">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="27.0" text="Number of available places in park : ">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="27.0" text="Number of available unplanned places in park : ">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="131.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="numberOfVisitorsLabel" alignment="CENTER" prefHeight="21.0" prefWidth="103.0" style="-fx-background-color: #1f7e5f;" text="0" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="availablePlacesLabel" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="21.0" prefWidth="103.0" style="-fx-background-color: #1f7e5f;" text="0" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="availableUnplannedPlacesLabel" alignment="CENTER" prefHeight="21.0" prefWidth="103.0" style="-fx-background-color: #1f7e5f;" text="0" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <ImageView fitHeight="143.0" fitWidth="165.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Pictures/92d015b0-5772-4ae1-a6f3-9d3210c1ccbe.jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="backButton" layoutX="777.0" layoutY="523.0" mnemonicParsing="false" onAction="#onBackButtonClicked" style="-fx-background-color: #1f7e5f;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="#110000" height="30.0" radius="14.5" width="30.0" />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

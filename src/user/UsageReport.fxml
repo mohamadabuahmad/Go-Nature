@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="695.0" prefWidth="688.0" style="-fx-background-color: #1f7e5f;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.UsageReportC">
+   <children>
+      <ImageView fitHeight="133.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/92d015b0-5772-4ae1-a6f3-9d3210c1ccbe.jpeg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="140.0" layoutY="78.0" prefHeight="580.0" prefWidth="430.0" style="-fx-background-color: rgb(244,231,211);">
+         <children>
+            <Label layoutX="125.0" layoutY="56.0" text="Usage Report" textFill="#618057">
+               <font>
+                  <Font name="Georgia" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="134.0" layoutY="96.0" text="month: " textFill="#529052">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="reportDateLabel" layoutX="208.0" layoutY="93.0" prefHeight="27.0" prefWidth="60.0" text="3/2024" textAlignment="CENTER" textFill="#37683d">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="parkNameLabel" layoutX="134.0" layoutY="14.0" text="Green Park" textFill="#4f6f50">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TableView fx:id="reportTable" layoutX="44.0" layoutY="152.0" prefHeight="378.0" prefWidth="343.0">
+              <columns>
+                <TableColumn fx:id="dateColumn" prefWidth="169.0" text="Date" />
+                <TableColumn fx:id="timeSpanColumn" prefWidth="175.0" text="Time span" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

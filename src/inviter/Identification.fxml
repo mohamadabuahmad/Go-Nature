@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnPane" prefHeight="539.0" prefWidth="1028.0" style="-fx-background-color: #1f7e5f;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inviter.Identification">
+   <children>
+      <AnchorPane layoutX="297.0" layoutY="64.0" prefHeight="429.0" prefWidth="392.0" style="-fx-background-color: rgb(244,231,211); ">
+         <children>
+            <Button fx:id="identify_btn" layoutX="80.0" layoutY="274.0" mnemonicParsing="false" onAction="#identificationBtnAction" prefHeight="27.0" prefWidth="236.0" style="-fx-background-color: #1f7e5f #1f7e5f; -fx-background-radius: 35;" text="identify" textFill="#dee5e8" />
+            <Label fx:id="id_label" alignment="CENTER_RIGHT" layoutX="1.0" layoutY="185.0" prefHeight="21.0" prefWidth="100.0" text="id :" textFill="#6b6966">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="id_text" alignment="CENTER" layoutX="114.0" layoutY="180.0" prefHeight="31.0" prefWidth="186.0" promptText="Enter Your Id Number">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label fx:id="star_1_label" layoutX="315.0" layoutY="177.0" text="*" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutY="133.0" prefHeight="21.0" prefWidth="392.0" text="Identification" textFill="#5b5a58">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="error_label" alignment="CENTER" layoutY="234.0" prefHeight="21.0" prefWidth="392.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="backButton" fitHeight="53.0" fitWidth="60.0" layoutX="14.0" layoutY="467.0" onMousePressed="#backClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="163.0" fitWidth="175.0" layoutX="197.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/92d015b0-5772-4ae1-a6f3-9d3210c1ccbe.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

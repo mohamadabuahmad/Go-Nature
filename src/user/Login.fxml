@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap" prefHeight="539.0" prefWidth="1028.0" style="-fx-background-color: #1f7e5f;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.Login">
+   <children>
+      <AnchorPane layoutX="300.0" layoutY="52.0" prefHeight="447.0" prefWidth="428.0" style="-fx-background-color: rgb(244,231,211);">
+         <children>
+            <TextField fx:id="user_name_txtfield" layoutX="69.0" layoutY="114.0" prefHeight="31.0" prefWidth="258.0" promptText="UserName" />
+            <PasswordField fx:id="password_txtfield" layoutX="69.0" layoutY="199.0" onKeyPressed="#EnterPressed" prefHeight="31.0" prefWidth="258.0" promptText="Password" />
+            <Button fx:id="sign_in_btn" layoutX="69.0" layoutY="287.0" mnemonicParsing="false" onAction="#handleSignIn" prefHeight="32.0" prefWidth="258.0" style="-fx-background-color: #1f7e5f;" text="SignIn" textFill="#e8e8e8" />
+            <Label layoutX="158.0" layoutY="35.0" prefHeight="31.0" prefWidth="72.0" text="Sign In" textAlignment="CENTER" textFill="#384035">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="error_label" alignment="CENTER" layoutX="69.0" layoutY="247.0" prefHeight="27.0" prefWidth="258.0" text="*Login details are incorrect*" textFill="#ee1919" visible="false">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="230.0" fitWidth="207.0" layoutX="134.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/92d015b0-5772-4ae1-a6f3-9d3210c1ccbe.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="back_btn" fitHeight="53.0" fitWidth="60.0" layoutX="14.0" layoutY="486.0" onMousePressed="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/arrow.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1110.0" style="-fx-background-color: #1f7e5f;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inviter.InviterPage">
+   <children>
+      <Label fx:id="title_homepage_label" layoutX="189.0" layoutY="-3.0" prefHeight="110.0" prefWidth="921.0" style="-fx-background-color: #1f7e5f;" text="  Home Page" textFill="#f2e6d3">
+         <font>
+            <Font name="Guttman Drogolin Bold" size="28.0" />
+         </font>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <effect>
+            <InnerShadow choke="0.25" color="#f5e7d3" radius="9.26" width="18.04" />
+         </effect>
+      </Label>
+      <AnchorPane fx:id="anPane" layoutX="200.0" layoutY="100.0" prefHeight="620.0" prefWidth="910.0">
+         <children>
+            <AnchorPane fx:id="WelcomTo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="910.0" style="-fx-background-color: rgb(244,231,211);">
+               <children>
+                  <TableView fx:id="visitor_table_view" layoutX="40.0" layoutY="167.0" prefHeight="200.0" prefWidth="748.0">
+                     <columns>
+                        <TableColumn fx:id="parkname_tableColumn" prefWidth="120.0" text="Park name" />
+                        <TableColumn fx:id="dateOrder_tableColumn" minWidth="5.0" prefWidth="101.0" text="Date" />
+                        <TableColumn fx:id="time_tableColumn" minWidth="5.0" prefWidth="111.0" text="Time" />
+                        <TableColumn fx:id="numOfVisitors_tableColumn" minWidth="5.0" prefWidth="144.0" text="# of visitors" />
+                        <TableColumn fx:id="priceOrder_tableColumn" minWidth="5.0" prefWidth="132.0" text="Price" />
+                        <TableColumn fx:id="statusOrder_tableColumn" minWidth="5.0" prefWidth="138.0" text="Status" />
+                     </columns>
+                  </TableView>
+                  <HBox layoutX="465.0" layoutY="167.0" prefHeight="145.0" prefWidth="365.0" />
+                  <Button fx:id="profile_confirm_btn" layoutX="329.0" layoutY="385.0" mnemonicParsing="false" onAction="#actionConfirmBtn" style="-fx-background-color: #f2e6d3; -fx-background-radius: 30;" text="confirm order">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#15ff00" />
+                     </effect>
+                  </Button>
+                  <Button fx:id="profile_cancel_btn" layoutX="502.0" layoutY="385.0" mnemonicParsing="false" onAction="#actionCancelBtn" style="-fx-background-color: #f2e6d3; -fx-background-radius: 30;" text="cancel order">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="RED" />
+                     </effect>
+                  </Button>
+                  <Label fx:id="label_for_tableview" layoutX="47.0" layoutY="132.0" prefHeight="25.0" prefWidth="300.0" text="You orders:">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="profile_id_label" layoutX="177.0" layoutY="213.0" prefHeight="20.0" prefWidth="164.0" />
+                  <Button fx:id="logout_btn" cancelButton="true" layoutX="692.0" layoutY="527.0" mnemonicParsing="false" onAction="#logoutBtn" prefHeight="30.0" prefWidth="147.0" style="-fx-background-color: #1f7e5f#1f7e5f;" text="Logout" textFill="#f8f1f1">
+                     <effect>
+                        <InnerShadow choke="0.2" height="0.0" radius="2.0" width="10.0" />
+                     </effect>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="165.0" fitWidth="207.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/92d015b0-5772-4ae1-a6f3-9d3210c1ccbe.jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="order_btn" layoutX="874.0" layoutY="20.0" mnemonicParsing="false" onAction="#order_btn" prefHeight="64.0" prefWidth="183.0" style="-fx-background-color: rgb(244,231,211);" text=" new order">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
